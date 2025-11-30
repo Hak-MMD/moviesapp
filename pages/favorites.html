@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Movies App</title>
+    <link rel="stylesheet" href="../styles/movies.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="logo-title">
+        <h1>Movies App</h1>
+      </div>
+
+      <!-- NAVIGATION BAR -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../pages/movies.html">Movies</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <ul>
+          <li>
+            <a href="../pages/favorites.html" class="active">My Favorites</a>
+          </li>
+          <li><a href="../pages/watchLater.html">Watch Later</a></li>
+        </ul>
+      </aside>
+      <div class="main-block">
+        <!-- TOOLBAR -->
+        <section class="toolbar">
+          <h2>Your Favorites</h2>
+          <form id="search-form" class="toolbar-search">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search for a movie..."
+              aria-label="Search movies"
+            />
+            <button type="submit">Search</button>
+          </form>
+        </section>
+
+        <!-- MOVIE GRID -->
+        <section class="movie-section">
+          <div class="movie-grid" id="movie-grid">
+            <div class="movie-card">
+              <img src="" alt="Movie Poster" class="movie-poster" />
+              <div class="movie-content">
+                <div class="movie-title"></div>
+                <div class="movie-year"></div>
+                <p class="movie-rating"></p>
+                <p class="movie-runtime"></p>
+                <p class="movie-genres"></p>
+                <p class="movie-description"></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <p id="no-favorites-msg" class="empty-text" style="display: none">
+          You don’t have any favorite movies yet. Go back to the Home page and
+          add some!
+        </p>
+      </div>
+    </main>
+    <!-- POPUP CONTAINER -->
+    <div id="popup" class="popup hidden">
+      <p id="popup-message"></p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <p>© 2025 Movies App. Built by our project team.</p>
+    </footer>
+
+    <script type="module" src="../scripts/favorites.js"></script>
+  </body>
+</html>

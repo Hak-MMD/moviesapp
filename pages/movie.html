@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Movies App</title>
+    <link rel="stylesheet" href="../styles/movie.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="logo-title">
+        <h1>Movies App</h1>
+      </div>
+
+      <!-- NAVIGATION BAR -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="movies.html">Movies</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <ul>
+          <li><a href="../pages/favorites.html">My Favorites</a></li>
+          <li><a href="../pages/watchLater.html">Watch Later</a></li>
+        </ul>
+      </aside>
+
+      <!-- MOVIE DETAIL BLOCK -->
+      <div class="main-block">
+        <section class="movie-detail">
+          <div class="movie-detail-poster">
+            <img
+              src="https://via.placeholder.com/300x450"
+              alt="Movie Poster"
+              class="movie-poster"
+            />
+          </div>
+          <div class="movie-detail-info">
+            <h2 class="movie-title"></h2>
+            <p class="movie-year"></p>
+            <p class="movie-rating"></p>
+            <p class="movie-runtime"></p>
+            <p class="movie-genres"></p>
+            <p class="movie-description"></p>
+            <div class="movie-actions">
+              <button id="fav" class="btn-tag">To favorites</button>
+              <button id="wch" class="btn-tag">Watch later</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- POPUP -->
+    <div id="popup" class="popup hidden">
+      <p id="popup-message"></p>
+    </div>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <p>© 2025 Movies App. Built by our project team.</p>
+    </footer>
+    <script type="module" src="../scripts/movie.js"></script>
+  </body>
+</html>
